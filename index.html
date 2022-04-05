@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="code.js" defer></script>
+    <title>ARTH200 Practice</title>
+</head>
+
+<body>
+    <h1>ARTH200 Exam Practice</h1>
+
+    <p>
+        This webpage will generate a new pair each time you click the button below. <br><br>
+        There are many ways to practice visual analysis: you can answer guiding questions, fill out a visual analysis chart, or practice writing a visual analysis essay. <br><br>
+        Make sure to send your practice to your Teaching Assistant for feedback!
+    </p>
+
+    <form>
+        <fieldset>
+            <legend>Category</legend>
+            <input type="radio" id="all" name="category" value="all" checked>All
+            <input type="radio" id="art" name="category" value="art">Art
+            <input type="radio" id="architecture" name="category" value="architecture">Architecture
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Number of Works</legend>
+            <input type="radio" id="one" name="category" value="one">One
+            <input type="radio" id="two" name="category" value="two" checked>Two
+        </fieldset>
+
+        <fieldset>
+            <legend>Controls</legend>
+            <input id="imgButton" type="button" value="Show new image(s)">
+            <input id="metaButton" type="button" value="Show metadata">
+        </fieldset>
+    </form>
+
+    <span id="imgA"></span>
+    <span id="imgB"></span>
+    <br>
+    <span id="capA"></span>
+    <span id="capB"></span>
+
+</body>
+
+</html>
