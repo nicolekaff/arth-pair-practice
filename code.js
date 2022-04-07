@@ -11,26 +11,26 @@ let architecture = [];
 let all = [];
 
 // Current works
-let workA;
-let workB;
+let jsonA;
+let jsonB;
 
 function main() {
     // Assemble url
     let url = "https://api.github.com/repos/" + USER_NAME + "/" + REPO_NAME + "/contents/data/";
 
     // Populate global art array
-    let art_json = JSON.parse(Get(url + "art/meta"));
+    let art_json = JSON.parse(Get(url + "meta/art"));
     for (let element of art_json) {
-        if ((element.html_url).endsWith(".json")) {
-            art.push(element.html_url);
+        if ((element.download_url).endsWith(".json")) {
+            art.push(element.download_url);
         }
     }
 
     // Populate global architecture array
-    let arch_json = JSON.parse(Get(url + "architecture/meta"));
+    let arch_json = JSON.parse(Get(url + "meta/architecture"));
     for (let element of arch_json) {
-        if ((element.html_url).endsWith(".json")) {
-            architecture.push(element.html_url);
+        if ((element.download_url).endsWith(".json")) {
+            architecture.push(element.download_url);
         }
     }
 
@@ -70,7 +70,8 @@ function loadImages() {
     }
 
     // Get random images 
-    workA = getRandomWork(category);
+    let workA = getRandomWork(category);
+    let workB;
     if (num_images === "1") {
         workB = undefined;
     } else {
@@ -81,18 +82,24 @@ function loadImages() {
     }
     
     // Format HTML
-    // https://raw.githubusercontent.com/nicolekaff/arth-pair-practice/main/data/art/imgs/akhenaten.jpg
-    // let url = "https://raw.githubusercontent.com/" + USER_NAME + "/" + REPO_NAME + "/main/data/imgs";
-    let codeA;
+    let url = "https://raw.githubusercontent.com/" + USER_NAME + "/" + REPO_NAME + "/main/data/imgs/";
+    jsonA = JSON.parse(Get(workA));
+    let codeA = '<img src="' + url + jsonA.image + '">';
     let codeB;
     
+    if (num_images === "1") {
+        jsonB = undefined;
+        codeB = "";
+    } else {
+        jsonB = JSON.parse(Get(workB));
+        codeB = '<img src="' + url + jsonB.image + '">';
+    }
+    
     // Update HTML
-    /*
     document.querySelector("#imgA").innerHTML = codeA;
     document.querySelector("#imgB").innerHTML = codeB;
     document.querySelector("#capA").innerHTML = " ";
     document.querySelector("#capB").innerHTML = " ";
-    */
 }
 
 
