@@ -16,10 +16,10 @@ let jsonB;
 
 function main() {
     // Assemble url
-    let url = "https://api.github.com/repos/" + USER_NAME + "/" + REPO_NAME + "/contents/data/";
+    let url = "https://api.github.com/repos/" + USER_NAME + "/" + REPO_NAME + "/contents/data/meta/";
 
     // Populate global art array
-    let art_json = JSON.parse(Get(url + "meta/art"));
+    let art_json = JSON.parse(Get(url + "art"));
     for (let element of art_json) {
         if ((element.download_url).endsWith(".json")) {
             art.push(element.download_url);
@@ -27,7 +27,7 @@ function main() {
     }
 
     // Populate global architecture array
-    let arch_json = JSON.parse(Get(url + "meta/architecture"));
+    let arch_json = JSON.parse(Get(url + "architecture"));
     for (let element of arch_json) {
         if ((element.download_url).endsWith(".json")) {
             architecture.push(element.download_url);
