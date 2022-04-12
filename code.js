@@ -118,15 +118,20 @@ function getRandomWork(category) {
 }
 
 function loadMetadata() {
+    // Format HTML
     let codeA = "";
     let codeB = "";
-    if (jsonA !=== undefined) {
-        
+    if (jsonA !== undefined) {
+        codeA = jsonA.metadata;
     }
     
     if (jsonB !== undefined) {
-        
+        codeB = jsonB.metadata;
     }
+    
+    // Update HTML
+    document.querySelector("#capA").innerHTML = codeA;
+    document.querySelector("#capB").innerHTML = codeB;
 }
 
 // Fetch JSON

@@ -32,3 +32,15 @@ form {
 #pictureLeft {
     margin-right: 3rem;
 }
+
+.captionBox {
+    width: 45rem;
+    font-size: 1.2rem;
+    text-align: center;
+    display: inline-block;
+    background-color: fuchsia;
+}
+
+#captionLeft {
+    margin-right: 3rem;
+}
