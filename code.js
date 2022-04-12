@@ -118,7 +118,15 @@ function getRandomWork(category) {
 }
 
 function loadMetadata() {
-    console.log("loading metadata");
+    let codeA = "";
+    let codeB = "";
+    if (jsonA !=== undefined) {
+        
+    }
+    
+    if (jsonB !== undefined) {
+        
+    }
 }
 
 // Fetch JSON

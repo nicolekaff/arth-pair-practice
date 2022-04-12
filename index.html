@@ -21,7 +21,7 @@
     </p>
 
     <form>
-        <fieldset>
+        <fieldset class="fs">
             <legend>Category</legend>
             <input type="radio" id="all" name="category" value="all" checked>All
             <input type="radio" id="art" name="category" value="art">Art
@@ -30,24 +30,32 @@
     </form>
 
     <form>
-        <fieldset>
+        <fieldset class="fs">
             <legend>Number of Works</legend>
             <input type="radio" id="one" name="num" value="1">One
             <input type="radio" id="two" name="num" value="2" checked>Two
         </fieldset>
-
-        <fieldset>
+        <fieldset class="fs">
             <legend>Controls</legend>
             <input id="imgButton" type="button" value="Show new image(s)">
             <input id="metaButton" type="button" value="Show metadata">
         </fieldset>
     </form>
-
-    <span id="imgA"></span>
-    <span id="imgB"></span>
+    
     <br>
-    <span id="capA"></span>
-    <span id="capB"></span>
+    <div id="pictureLeft" class="pictureBox">
+        <span id="imgA"> </span>
+    </div>
+    <div id="pictureRight" class="pictureBox">
+        <span id="imgB"> </span>
+    </div>
+
+    <div id="captionLeft">
+        <span id="capA"> </span>
+    </div>
+    <div id="captionRight">
+        <span id="capB"> </span>
+    </div>
 
 </body>
 
