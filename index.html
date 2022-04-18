@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Basic HTML5 Document" />
     <meta name="keywords" content="HTML5, Responsive" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Arvo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script src="code.js" defer></script>
     <title>ARTH200 Practice</title>
@@ -13,50 +16,49 @@
 
 <body>
     <h1>ARTH200 Exam Practice</h1>
+    <div id="belowH1">
+        <p>
+            This webpage will generate a new pair each time you click the button below. <br>
+            There are many ways to practice visual analysis: you can answer guiding questions, fill out a visual analysis chart, or practice writing a visual analysis essay. <br>
+            Make sure to send your practice to your Teaching Assistant for feedback!
+        </p>
 
-    <p>
-        This webpage will generate a new pair each time you click the button below. <br><br>
-        There are many ways to practice visual analysis: you can answer guiding questions, fill out a visual analysis chart, or practice writing a visual analysis essay. <br><br>
-        Make sure to send your practice to your Teaching Assistant for feedback!
-    </p>
+        <form>
+            <fieldset class="fs" id="categoryFS">
+                <legend>Category</legend>
+                <input type="radio" id="all" name="category" value="all" checked>All
+                <input type="radio" id="art" name="category" value="art">Art
+                <input type="radio" id="architecture" name="category" value="architecture">Architecture
+            </fieldset>
+        </form>
 
-    <form>
-        <fieldset class="fs">
-            <legend>Category</legend>
-            <input type="radio" id="all" name="category" value="all" checked>All
-            <input type="radio" id="art" name="category" value="art">Art
-            <input type="radio" id="architecture" name="category" value="architecture">Architecture
-        </fieldset>
-    </form>
+        <form>
+            <fieldset class="fs" id="numFS">
+                <legend>Number of Works</legend>
+                <input type="radio" id="one" name="num" value="1">One
+                <input type="radio" id="two" name="num" value="2" checked>Two
+            </fieldset>
+            <fieldset class="fs" id="controlsFS">
+                <legend>Controls</legend>
+                <input class="button" id="imgButton" type="button" value="Show new image(s)">
+                <input class="button" id="metaButton" type="button" value="Show metadata">
+            </fieldset>
+        </form>
 
-    <form>
-        <fieldset class="fs">
-            <legend>Number of Works</legend>
-            <input type="radio" id="one" name="num" value="1">One
-            <input type="radio" id="two" name="num" value="2" checked>Two
-        </fieldset>
-        <fieldset class="fs">
-            <legend>Controls</legend>
-            <input id="imgButton" type="button" value="Show new image(s)">
-            <input id="metaButton" type="button" value="Show metadata">
-        </fieldset>
-    </form>
-    
-    <br>
-    <div id="pictureLeft" class="pictureBox">
-        <span id="imgA"> </span>
+        <br>
+        <div id="pictureLeft" class="pictureBox">
+            <span id="imgA"> </span>
+        </div>
+        <div id="pictureRight" class="pictureBox">
+            <span id="imgB"> </span>
+        </div>
+
+        <div id="captionLeft" class="captionBox">
+            <span id="capA"> </span>
+        </div>
+        <div id="captionRight" class="captionBox">
+            <span id="capB"> </span>
+        </div>
+
     </div>
-    <div id="pictureRight" class="pictureBox">
-        <span id="imgB"> </span>
-    </div>
-
-    <div id="captionLeft" class="captionBox">
-        <span id="capA"> </span>
-    </div>
-    <div id="captionRight" class="captionBox">
-        <span id="capB"> </span>
-    </div>
-
-</body>
-
-</html>
+</body></html>

@@ -1,5 +1,10 @@
 html {
     font-size: 14px;
+    background-color: rgb(241, 221, 191);
+}
+
+body {
+    margin-left: 1.5rem;
 }
 
 img {
@@ -9,8 +14,25 @@ img {
     margin: auto;
 }
 
+h1 {
+    font-family: 'Arvo', serif;
+    text-decoration: underline;
+}
+
+#belowH1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    line-height: 1.8;
+}
+
 fieldset {
     margin-bottom: 1rem;
+}
+
+legend {
+    font-weight: bold;
 }
 
 form {
@@ -19,7 +41,7 @@ form {
 
 .fs {
     display: inline;
-    width: 18rem;
+    height: 3.5rem;
 }
 
 .pictureBox {
@@ -42,3 +64,8 @@ form {
 #captionLeft {
     margin-right: 3rem;
 }
+
+.button {
+    font-family: 'Poppins', sans-serif;
+}
+
