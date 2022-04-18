@@ -4,23 +4,33 @@ html {
 }
 
 body {
-    margin-left: 1.5rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 0rem;
 }
 
 img {
-    max-height: 35rem;
+    max-height: 32rem;
     max-width: 45rem;
     display: block;
     margin: auto;
 }
 
+#headerBox {
+    background-color: rgb(58, 56, 69);
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0.2rem 0.2rem 0.2rem 1.5rem;
+}
+
 h1 {
     font-family: 'Arvo', serif;
-    text-decoration: underline;
+    color: rgb(241, 221, 191);
+    /* color: rgb(247, 204, 172); */
 }
 
 #belowH1 {
     font-family: 'Poppins', sans-serif;
+    padding-left: 1.5rem;
 }
 
 p {
@@ -32,7 +42,11 @@ fieldset {
 }
 
 legend {
+    font-family: 'Arvo', serif;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
     font-weight: bold;
+    color: rgb(241, 221, 191);
+    background-color: rgb(58, 56, 69);
 }
 
 form {
@@ -46,7 +60,7 @@ form {
 
 .pictureBox {
     width: 45rem;
-    height: 35rem;
+    /* height: 32rem; */
     display: inline-block;
 }
 
