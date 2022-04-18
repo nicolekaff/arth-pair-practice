@@ -4,6 +4,7 @@ window.onload = main;
 // Constants - update these as needed!
 const USER_NAME = "nicolekaff";
 const REPO_NAME = "arth-pair-practice";
+const COURSE = "ARTH200";
 
 // Global arrays for works
 let art = [];
@@ -15,6 +16,9 @@ let jsonA;
 let jsonB;
 
 function main() {
+    // Update page heading
+    document.querySelector("#heading").innerHTML = COURSE + " Exam Practice"
+    
     // Assemble url
     let url = "https://api.github.com/repos/" + USER_NAME + "/" + REPO_NAME + "/contents/data/meta/";
 
