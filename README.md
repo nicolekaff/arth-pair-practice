@@ -39,9 +39,22 @@ const COURSE = "ARTH200";
 3. Under **Source** it should say that GitHub pages is currently disabled. In the dropdown menu change the selected option from **None** to **main** and then hit **Save**. 
 4. A message should appear telling you that your site is ready to be published. Clicking the link should take you to the live webpage. *Note: It may take a few minutes for the webpage to show up, as GitHub needs time to build, deploy, and check the page status. Refreshing the page should render it when it's ready.*
 
-
 ## Formatting the Data
 
 ## Updating the Page
+Use the following steps to add new images to the webpage:
+1. On the GitHub repository, enter the **data** folder and then the **imgs** folder. 
+2. In the upper right, select **Add file -> Upload files**.
+3. Drag and drop the new images or select **choose your files** and upload them from there.
+4. At the bottom, ensure that **Commit directly to the main branch** is selected and then click **Commit changes**. 
+
+Use the following steps to add the corresponding data files for the new images:
+1. On the GitHub repository, enter the **data** folder and then the **meta** folder. 
+2. Enter the **architecture** folder.
+3. In the upper right, select **Add file -> Upload files**.
+4. Drag and drop the new data files for all architecture pieces or select **choose your files** and upload them from there.
+5. At the bottom, ensure that **Commit directly to the main branch** is selected and then click **Commit changes**. 
+6. Go back to the **meta** folder and then enter the **art** folder.
+7. Repeat steps 3-5 for the artwork data pieces. 
 
 ## Credit
