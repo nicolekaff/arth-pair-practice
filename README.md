@@ -40,6 +40,31 @@ const COURSE = "ARTH200";
 4. A message should appear telling you that your site is ready to be published. Clicking the link should take you to the live webpage. *Note: It may take a few minutes for the webpage to show up, as GitHub needs time to build, deploy, and check the page status. Refreshing the page should render it when it's ready.*
 
 ## Formatting the Data
+Every work uploaded to the webpage needs both an image and a metadata file. 
+#### Images
+- All images will be placed in **data/imgs** regardless of whether they are categorized as art or architcture. 
+- Images can be of type **PNG** or **JPEG/JPG**.
+- It is best to give images meaningful names and to avoid spaces/special characters. Below are some examples of good file names:
+   - *Temple of Portunus* -> **temple_of_portunus.jpg**
+   - Sculpture of *Akhenaten* -> **akhenaten.jpg** or **sculpture_of_akhenaten.jpg**
+#### Metadata
+- Metadata will be placed in **data/meta/architecture** or **data/meta/art** depending on the work's categorization.
+- Data files must be in JavaScript Object Notation (JSON) format with the following four fields:
+    - **metadata** (tombstone information for the work)
+    - **period**
+    - **category**
+    - **image** (must match the file name of the corresponding image)
+- To create a JSON file, open a blank file in a text editor and save it with the **.json** extension.
+- The JSON file name can be anything (it can, but does not need to match the image file name), although a meaningful naming system can be useful for resusing files later.
+- Below is the contents of a JSON file for a sculpture of *Akhenaten*. 
+```
+{
+    "metadata": "Akhenaten, from Karnak, Thebes, 1353-1335 BCE. Sandstone, Egytpian Museum, Cairo",
+    "period": "Egyptian",
+    "category": "Sculpture",
+    "image": "akhenaten.jpg"
+}
+```
 
 ## Updating the Page
 Use the following steps to add new images to the webpage:
