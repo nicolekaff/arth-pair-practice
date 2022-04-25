@@ -11,7 +11,7 @@ body {
 
 img {
     max-height: 32rem;
-    max-width: 45rem;
+    max-width: 40rem;
     display: block;
     margin: auto;
 }
@@ -25,7 +25,6 @@ img {
 h1 {
     font-family: 'Arvo', serif;
     color: rgb(241, 221, 191);
-    /* color: rgb(247, 204, 172); */
 }
 
 #belowH1 {
@@ -59,8 +58,7 @@ form {
 }
 
 .pictureBox {
-    width: 45rem;
-    /* height: 32rem; */
+    width: 40rem;
     display: inline-block;
 }
 
@@ -69,7 +67,7 @@ form {
 }
 
 .captionBox {
-    width: 45rem;
+    width: 40rem;
     font-size: 1.2rem;
     text-align: center;
     display: inline-block;
