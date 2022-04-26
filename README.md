@@ -20,8 +20,8 @@ This platform was designed to be easy to set up and to maintain. No knowledge of
 1. Go to the [arth-pair-practice respository](https://github.com/nicolekaff/arth-pair-practice)
 2. Click the green **Code** button at the top and select **Download ZIP**.
 3. Unzip the downloaded file **arth-pair-practice-main.zip**.
-4. Enter the unzipped **arth-pair-practice-main** folder. You should see a single folder inside that is also named **arth-pair-practice-main**. Enter this folder too and then open the file **code.js**. *Note: You can open **code.js** in any text editor, including Notepad on Windows (right click -> Open with -> Notepad) or TextEdit on Mac (right click -> Open with -> TextEdit)* 
-6. Update lines 4-7 of **code.js** by replacing the text within quotations with your information (keep the quotations and the semicolon). The USER_NAME should match your Github account username, REPO_NAME should be the name of the Github respository that you created. COURSE should be the course code for which the webpage is intended for. See below for an example where the Github user name is nicolekaff, the repository name is arth-pair-practice, and the course code is ARTH200. 
+4. Enter the unzipped **arth-pair-practice-main** folder and then open the file **code.js**. *Note: You can open **code.js** in any text editor, including Notepad on Windows (right click -> Open with -> Notepad) or TextEdit on Mac (right click -> Open with -> TextEdit)* 
+6. Update lines 4-7 of **code.js** by replacing the text within quotations with your information (keep the quotations and the semicolon). The USER_NAME should match your Github account username, REPO_NAME should be the name of the Github respository that you created. COURSE should be the course code for which the webpage is intended for. See below for an example where the Github username is nicolekaff, the repository name is arth-pair-practice, and the course code is ARTH200. 
 ```javascript
 // Constants - update these as needed!
 const USER_NAME = "nicolekaff";
@@ -29,11 +29,11 @@ const REPO_NAME = "arth-pair-practice";
 const COURSE = "ARTH200";
 ```
 7. Save **code.js** and close the file. 
-8. Enter the **data** folder and then copy and paste your initial images into the **imgs** sub-folder. 
-9. Enter the **meta** sub-folder. Copy and paste the initial metadata files into the corresponding **architecture** and **art** folders. See the **Formatting the Data** section below for instructions on how the data should be formatted. 
+8. Enter the **data** folder and then copy and paste your initial images into the **imgs** sub-folder. The default images that come with the repository download can be deleted if desired. 
+9. Enter the **meta** sub-folder. Copy and paste the initial metadata files into the corresponding **architecture** and **art** folders. Again, the default data files that come with the repository download can be deleted if desired. See the **Formatting the Data** section below for instructions on how the data should be formatted. 
 10. Return to your newly created empty Github respository. With the **Code** tab selected, click **upload an existing file** at the top under **Quick setup**. 
 11. Go to the innermost **arth-pair-practice-main** folder in your file explorer and select all of the files/subfolders. Click and drag these into the area labeled **Drag fies here to add them to your repository.** *Note: It is important that the click-and-drag method is used rather than clicking "choose your files* and uploading from there. Clicking and dragging ensures that the all files in the data subfolder will be properly uploaded.
-12. At the bottom, ensure that **Commit directly to the main branch** is selected and then click **Commit changes**. 
+12. At the bottom of the page click **Commit changes**. 
 
 ### Making the Webpage Live
 1. Click the **Settings** tab of your repository.
@@ -51,7 +51,7 @@ Every work uploaded to the webpage needs both an image and a metadata file.
    - Sculpture of *Akhenaten* -> **akhenaten.jpg** or **sculpture_of_akhenaten.jpg**
 #### Metadata
 - Metadata will be placed in **data/meta/architecture** or **data/meta/art** depending on the work's categorization.
-- Data files must be in JavaScript Object Notation (JSON) format with the following four fields:
+- Data files must be in JavaScript Object Notation (JSON) format with the following four (case-sensitive) fields:
     - **metadata** (tombstone information for the work)
     - **period**
     - **category**
