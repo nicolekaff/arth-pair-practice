@@ -1,4 +1,4 @@
-# Art History Image Practice
+# Art History Image Randomizer 
 This project serves as an art history study platform for students. The web interface allows for flash-card memorization of single works and their tombstone information as well as for practice writing pairwise comparisons. Instructors may customize the works included on the webpage to fit the individual curriculum of their course, and the page may be updated regularly before exams or as works are covered in class. 
 
 This platform was designed to be easy to set up and to maintain. No knowledge of Git/GitHub, JavaScript, or HTML/CSS is necessary. 
@@ -85,3 +85,11 @@ Use the following steps to add the corresponding data files for the new images:
 7. Repeat steps 3-5 for the artwork data pieces. 
 
 ## Credit
+This repository was created by Nicole Kaff in the Michelle Smith Collaboratory for Visual Culture as a resource for the [ARTH Visual Analysis Practice](http://2020collabsandbox8.artinterp.org/omeka/home-page) project, in support of the ARTH200 course at the University of Maryland.<br>
+
+**Concept:** Alicia Perkovich<br>
+**Research:** Alicia Perkovich, Amanda K. Chen<br>
+**Omeka site:** Amanda K. Chen<br>
+**Image Randomizer site:** Nicole Kaff<br>
+**General Advising:** Quint Gregory and Chris Cloke
+
