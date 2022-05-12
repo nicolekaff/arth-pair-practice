@@ -127,10 +127,16 @@ function loadMetadata() {
     let codeB = "";
     if (jsonA !== undefined) {
         codeA = jsonA.metadata;
+        codeA += ". ";
+        codeA += jsonA.period;
+        codeA += ".";
     }
     
     if (jsonB !== undefined) {
         codeB = jsonB.metadata;
+        codeB += ". ";
+        codeB += jsonB.period;
+        codeB += ".";
     }
     
     // Update HTML
